@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li:first-child{
+                color: green;
+                background-color: aqua;
+                
+            }
+
+            li:last-child{
+                color: red;
+                background-color:#ff7979 ;
+                
+            }
+            .box{
+                display: block;
+                background-color: aqua;
+                
+                
+            }
+            .box:not(:first-child){
+                border-top: 1px solid blue ;
+            }
+            div{
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+            }
+            .container li:nth-child(3n+2){
+                text-align: center;
+               
+            }
+            .container li:nth-child(3n){
+                text-align: right;
+                
+            }
+            .box1{
+                background-color: purple;
+                width: 50px;
+                height: 50px;
+            }
+            .container{
+                background-color: aqua;
+                width: 200px;
+                height: 400px;
+            }
+            .box2{
+                background-color: yellow;
+                color: red;
+                
+            }
+            span:hover {
+                background-color: greenyellow;
+                color: orchid
+            }
+
+            
+            
+                
+            
+        </style>
+
+    </head>
+    <body>
+        <ol>
+            <li>Tí</li>
+            <li>Tèo</li>
+            <li>Tôm</li>
+            <li>Tủm</li>
+
+            
+        </ol>
+        <span>
+        <div class="box">Item number 1</div>
+
+        
+        <div class="box">Item number 2</div>
+        <div class="box">Item number 3</div>
+        <div class="box">Item number 4</div>
+        </span>
+        <ul class="container">
+            
+            <li><div class="box1"></div></li>
+            <li><div class="box1"></div></li>
+            <li><div class="box1"></div></li>
+            <li><div class="box1"></div></li>
+            <li><div class="box1"></div></li>
+            <li><div class="box1"></div></li>
+            
+        </ul>
+        <span class="box2">bai tap</span>
+    </body>
+</html>
