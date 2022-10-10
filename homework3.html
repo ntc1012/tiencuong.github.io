@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+      }
+      .left-nav {
+        float: left;
+        width: 30%;
+      }
+      .left-nav nav {
+        color: rgb(77, 47, 47);
+        text-align: center;
+        font-weight: 800;
+        font-size: 18px;
+        padding-bottom: 14px;
+        padding-right: 12px;
+      }
+      .left-nav a {
+        text-align: center;
+        padding: 12px;
+      }
+      .left-nav img {
+        padding-left: 60px;
+      }
+      .mid-nav {
+        height: 420px;
+        width: 654px;
+        margin: 50px auto;
+        border-radius: 7px 7px 7px 7px;
+      }
+      .mid-nav img {
+        float: left;
+        height: 270px;
+        width: 200px;
+      }
+      .mid-nav nav {
+        margin: 0 0 0 38px;
+        padding-top: 52px;
+        font-size: 18px;
+        font-weight: 800;
+        color: rgb(77, 47, 47);
+      }
+
+      .mid-nav a {
+        height: 125px;
+        margin: 0 0 0 38px;
+        font-family: "Playfair Display", serif;
+        color: #8d8d8d;
+        line-height: 1.7em;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+      }
+      .another a {
+        margin-top: 5px;
+      }
+      .mid-nav button {
+        float: left;
+        margin-top: 5px;
+      }
+      .right-nav {
+        float: left;
+        width: 30%;
+      }
+      .right-nav nav {
+        color: rgb(77, 47, 47);
+        text-align: center;
+        font-weight: 800;
+        font-size: 18px;
+        padding-bottom: 14px;
+        padding-right: 12px;
+      }
+      .right-nav a {
+        text-align: center;
+        padding: 12px;
+      }
+      .right-nav img {
+        padding-left: 85px;
+      }
+      .mid-nav li {
+        text-indent: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-nav">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8yJwWFppakgKZ-gqOq86LrjPzCW9gtsSdw&usqp=CAU"
+          alt="arm-chair"
+        />
+
+        <nav>Arm Chair</nav>
+        <a
+          >Nemo enim ipsam voluptatem quia volu ptas sit asperma aut odit aut
+        </a>
+      </div>
+
+      <div class="mid-nav">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBTrdh-guMoounvIwG-SF15V2cNVc510ZJA&usqp=CAU"
+          alt="stool and chair"
+        />
+
+        <nav>Latest Designed Stool and Chair</nav>
+        <a
+          >Edi Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem
+          Accusantium Doloret Mque Laudantium, Totam Rem Aperiam.</a
+        >
+        <p class="another">
+          Sales Start from
+          <a style="color: #f39c12">$99.00</a>
+        </p>
+
+        <button>Discover More</button>
+      </div>
+      <div class="right-nav">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Hanging lamp"
+        />
+        <nav>Hanging Lamp</nav>
+        <a>
+          Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
