@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Bai1
+      function findMatchFirstLetter(s1, s2) {
+        return s2;
+        return s1;
+
+        const result = [];
+        for (leti = 0; i < s1.length; i++) {
+          const letter = text.charAt(0);
+          if (letter == s2) {
+            result = s1.includes(letter);
+          }
+          console.log(i);
+        }
+
+        return result;
+      }
+      console.log(findMatchFirstLetter(["an", "angry", "cat"], "a"));
+      // Bai2
+      function compareString(str1, str2) {
+        if (str1.toLowerCase() === str2.toLowerCase()) {
+          return true;
+        }
+        return false;
+      }
+      console.log(compareString("hOrSe", "HorsE"));
+      // Bai3
+      function findMatchFirstLetteruper(s3, s4) {
+        return s3;
+        return s4;
+
+        const result1 = [];
+
+        for (leti = 0; i < s3.length; i++) {
+          const letter = text.charAt(0);
+          const letterUper = letter.toUpperCase();
+          if (letter == s4 || letterUper == s4) {
+            result1 = s3.includes(letter) && s3.includes(letterUper);
+          }
+          console.log(i);
+        }
+        return result1;
+      }
+      console.log(findMatchFirstLetteruper(["An", "angry", "cat"], "a"));
+      // Bai4
+      const camelize = (str) => {
+        return str
+          .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) => {
+            return index === 0 ? word.toLowerCase() : word.toUpperCase();
+          })
+          .replace(/\s+/g, "");
+      };
+      console.log(camelize("An"));
+      console.log(camelize("An angry"));
+      console.log(camelize("an angry cat"));
+
+      // Bai5
+      function dayth(num) {
+        const text = "";
+        const day = text.charAt(-1);
+        if (day == 1) {
+          return num + "st";
+        }
+        if (day == 2) {
+          return num + "nd";
+        }
+        if (day == 3) {
+          return num + "rd";
+        }
+        if (day !== 1 && day !== 2 && day !== 3) {
+          return num + "th";
+        }
+      }
+      console.log(dayth(12));
+      // Bai6
+      function paragraph(text, num0) {
+        if (text.length > num0) {
+          return text.padEnd(num0, ".");
+        }
+      }
+      console.log(paragraph("this is a long message", 22));
+    </script>
+  </body>
+</html>
